@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #6eecec;
+    /* background-image: radial-gradient(#6315D6, #15A0D6,#6315D6, #15A0D6); 
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: black;
+    font-family: 'Open Sans', Roboto, 'Segoe UI', Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    
+    position: relative;
+    text-align: center;
+}
+
+.main-container {
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h2{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2, #stitch-el, ::placeholder {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#stitch-el {
+    background: transparent;
+    border: none;
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+#save-el {
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100px;
+}
+
+#clear-btn {
+    background: #da1a3a;
+    margin-left: 5px;
+}
+
+#save-btn {
+    background: #009e35;
+    margin-right: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+.rows {
+    height: 10px;
+    margin-bottom: 10px;
+}

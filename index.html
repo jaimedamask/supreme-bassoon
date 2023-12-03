@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <title>Stitch Counter</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>Current Row: </h1>
+            <h2 id="current-el">1</h2>
+            <h1>Stitch Count:</h1>
+            <input id="stitch-el" type="text" inputmode="numeric" placeholder="0"></input>
+            <!--<h2 id="stitch-el">0</h2>
+            <button id="increment-btn" onclick="increment()">Add</button> -->
+            <!-- <button id="save-btn" onclick="save()">Save</button> -->
+            <div id="btn-container">
+                <button id="save-btn">Save</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+            <h3>Previous Rows:</h3>
+            <!-- <p id="save-el"></p> -->
+            <div class="save-container">
+                <ul id="save-el"></ul>
+            </div>
+            <script src="/index.js"></script>
+        </div>
+    </body>
+</html>
