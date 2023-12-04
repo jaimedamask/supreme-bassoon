@@ -16,10 +16,14 @@ function save(text) {
     saveEl.appendChild(item);
 }
 
-/* Clears all row elements from save-el to reset count */
-// if saveEl not empty:
-// delete all li elements
-// currentRow = 1;
+/* Clears all child elements from save-el and resets row count */
+function clearPrev() {
+    let saveEl = document.getElementById('save-el');
+    while (saveEl.lastChild) {
+        saveEl.removeChild(saveEl.lastChild);
+    }
+    currentEl.innerText = 1;
+}
 
 /* Event listener for save button */
 document.getElementById('save-btn').addEventListener('click', function() {
@@ -31,8 +35,11 @@ document.getElementById('save-btn').addEventListener('click', function() {
 });
 
 /* Event listener for clear button */
-
+document.getElementById('clear-btn').addEventListener('click', function() {
+    clearPrev();
+})
 
 // Eventual goals:
 // Save multiple projects at once
 // Create and update local storage
+// Edit button for rows?
